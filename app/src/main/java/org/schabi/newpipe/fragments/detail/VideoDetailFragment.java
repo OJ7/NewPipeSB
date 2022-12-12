@@ -165,6 +165,9 @@ public final class VideoDetailFragment
     private boolean showComments;
     private boolean showRelatedItems;
     private boolean showDescription;
+
+    private boolean ignoreQueue;
+
     private String selectedTabTag;
     @AttrRes @NonNull final List<Integer> tabIcons = new ArrayList<>();
     @StringRes @NonNull final List<Integer> tabContentDescriptions = new ArrayList<>();
@@ -295,6 +298,10 @@ public final class VideoDetailFragment
         showComments = prefs.getBoolean(getString(R.string.show_comments_key), true);
         showRelatedItems = prefs.getBoolean(getString(R.string.show_next_video_key), true);
         showDescription = prefs.getBoolean(getString(R.string.show_description_key), true);
+        ignoreQueue = prefs.getBoolean(
+                getString(R.string.enable_ignore_backstack_key),
+                DeviceUtils.isTv(activity)
+        );
         selectedTabTag = prefs.getString(
                 getString(R.string.stream_info_selected_tab_key), COMMENTS_TAB_TAG);
         prefs.registerOnSharedPreferenceChangeListener(this);
@@ -792,6 +799,11 @@ public final class VideoDetailFragment
             restoreDefaultOrientation();
             setAutoPlay(false);
             return true;
+        }
+
+        // when queue should be ignored, directly skip checks and let MainActivity handle everything
+        if (ignoreQueue) {
+            return false;
         }
 
         // If we have something in history of played items we replay it here

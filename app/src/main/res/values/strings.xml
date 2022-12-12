@@ -781,6 +781,8 @@
     <string name="feed_toggle_show_future_items">Show future items</string>
     <string name="feed_toggle_hide_future_items">Hide future items</string>
     <string name="sort">Sort</string>
+    <string name="enable_ignore_backstack_key">Ignore Playlist Backstack</string>
+    <string name="enable_ignore_backstack_title">Playlist Backstack</string>
     <!-- SponsorBlock -->
     <string name="sponsor_block">SponsorBlock</string>
     <string name="sponsor_block_home_page_title">View Website</string>
