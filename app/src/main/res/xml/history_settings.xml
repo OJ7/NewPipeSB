@@ -37,6 +37,14 @@
         app:singleLineTitle="false"
         app:iconSpaceReserved="false" />
 
+    <SwitchPreferenceCompat
+        android:key="@string/enable_ignore_backstack_key"
+        android:summary="@string/enable_ignore_backstack_key"
+        android:title="@string/enable_ignore_backstack_title"
+        app:singleLineTitle="false"
+        app:iconSpaceReserved="false" />
+
+
     <PreferenceCategory
         android:layout="@layout/settings_category_header_layout"
         android:title="@string/settings_category_clear_data_title"
