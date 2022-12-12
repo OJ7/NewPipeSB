@@ -1,5 +1,5 @@
-# NewPipe x SponsorBlock x Return YouTube Dislike
-A fork of [NewPipe](https://github.com/TeamNewPipe/NewPipe) with [SponsorBlock](https://sponsor.ajay.app/) and [Return YouTube Dislike](https://returnyoutubedislike.com/) functionality.
+# NewPipe x SponsorBlock x Return YouTube Dislike X Back Settings
+A fork of [NewPipe](https://github.com/TeamNewPipe/NewPipe) with [SponsorBlock](https://sponsor.ajay.app/) and [Return YouTube Dislike](https://returnyoutubedislike.com/) functionality and [Back Buton Settings](https://github.com/TeamNewPipe/NewPipe/pull/7273) (_keeping this fork until the latter PR is merged_).
 
 ![01](.github/images/preview01.gif)
 ![02](.github/images/preview02.gif)
@@ -7,9 +7,7 @@ A fork of [NewPipe](https://github.com/TeamNewPipe/NewPipe) with [SponsorBlock](
 The implementation is still a bit basic but it generally works pretty well.
 
 ## How can I get this?
-[<img alt="Get it on IzzyOnDroid" height="80" src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png">](https://apt.izzysoft.de/fdroid/index/apk/org.polymorphicshade.newpipe)
-
-Builds will be uploaded in the [Releases](https://github.com/polymorphicshade/NewPipe/releases) section. Please download the APK from the newest release and install it on your device.
+Builds will be uploaded in the [Releases](https://github.com/OJ7/NewPipeSB/releases) section. Please download the APK from the newest release and install it on your device.
 
 ## Why isn't this in upstream NewPipe?
 [The developer team](https://github.com/TeamNewPipe) behind the official NewPipe decided that they do not want to include these kinds of functionality in their app. See https://newpipe.schabi.org/blog/pinned/newpipe-and-online-advertising/, https://github.com/TeamNewPipe/NewPipe/pull/3205, and https://github.com/TeamNewPipe/NewPipe/issues/7469 for more information and discussion.
